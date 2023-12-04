@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Biodate</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- tailwinds -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body id="Beranda" class="font-[Poppins]">
+
+    <!-- navbar -->
+    <nav class="p-5 bg-gradient-to-r from-lime-200 to-lime-400 shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+            <span class="text-2xl text-slate-700 font-bold cursor-pointer"> Biodata </span>
+            <span class="lg:hidden md:hidden">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+        <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute lg:bg-none md:bg-none bg-gradient-to-r from-lime-200 to-lime-400 
+            w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 top-[-400px]
+            transition-all ease-in-out duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl text-slate-700 hover:text-white duration-500">Beranda</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#Tentang Saya" class="text-xl text-slate-700 hover:text-white duration-500">Tentang Saya</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#Projek" class="text-xl text-slate-700 hover:text-white duration-500">Projek</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#Sertif" class="text-xl text-slate-700 hover:text-white duration-500">Sertif</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#Hobi" class="text-xl text-slate-700 hover:text-white duration-500">Hobi</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#Kontak" class="text-xl text-slate-700 hover:text-white duration-500">Kontak</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- hero -->
+    <section id="home" class="py-5 ">
+        <div class="container flex flex-wrap items-center justify-center
+             mx-auto mt-10 md:px-12 md:flex-row">
+            <div class="mb-14 lg:mb-0 lg:w-1/2">
+                <h1 class="max-w-xl text-slate-700 font-bold text-center
+             text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:text-left lg:leading-tight mb-5">Firman Hidayatullah
+                </h1>
+                <p
+                    class="max-w-xl font-medium text-center text-slate-600 lg:text-left lg:max-w-md md:text-2xl lg:text-2xl">
+                    Goweser | Hidroponik | Ngoding
+                </p>
+            </div>
+            <div class="">
+                <img class="w-52 sm:w-64 md:w-full lg:w-full rounded-full" src="img/me.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- end hero -->
+
+    <section id="Tentang Saya" class="py-5 mt-32 bg-gradient-to-r from-lime-100 to-lime-300">
+        <div class="container flex flex-wrap items-center justify-center
+             mx-auto mt-10 mb-[-200px] lg:mb-0 md:px-12 md:flex-row">
+            <div class="mb-14 lg:mb-0 lg:w-1/2">
+                <h1 class="max-w-xl text-slate-700 font-bold text-center
+                         text-2xl sm:text-3xl md:text-4xl sm:text-center sm:mx-4 md:text-center lg:text-3xl 
+                         lg:text-left lg:leading-tight mb-5">
+                    Tentang
+                </h1>
+                <p
+                    class="mx-4 pb-6 max-w-xl font-medium text-justify text-slate-600 lg:text-justify lg:max-w-md md:text-2xl lg:text-2xl">
+                    Anak pertama dari dua bersaudara, Ayah kelahiran Banyuwangi dan Ibu kelahiran Jember. Saudara saya
+                    bernama Muhammad
+                    Alif. Kami mempunyai hoby yang sama, menjelajahi desa sambil menikmati hembusan udara segar dengan
+                    mengayuh sepeda.
+                </p>
+            </div>
+
+            <div class="mb-14 lg:mb-0 lg:w-1/2">
+                <h1
+                    class="max-w-xl text-slate-700 font-bold text-center
+                   sm:text-left sm:mx-4 text-2xl sm:text-3xl md:text-center md:text-4xl lg:text-3xl lg:text-left lg:leading-tight mb-5">
+                    Sosial Media
+                </h1>
+                <p
+                    class="mx-4 max-w-xl font-medium text-justify text-slate-600 lg:text-justify lg:max-w-md md:text-2xl lg:text-2xl">
+                    Tak kenal maka tak sayang
+                </p>
+
+                <div class="flex justify-center sm:justify-start md:justify-center lg:justify-normal">
+                    <!-- youtube -->
+                    <a href="https://www.facebook.com/firman.hidayatullah/" target="_blank" class="my-4 mx-4 w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400
+                         hover:border-lime-300 hover:bg-white">
+                        <img src="img/logo/fb.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/firmandyt/" target="_blank" class="my-4 mx-4 w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400
+                         hover:border-lime-300 hover:bg-white">
+                        <img src="img/logo/ig.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/firman.hidayatullah/" target="_blank" class="my-4 mx-4 w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400
+                         hover:border-lime-300 hover:bg-white">
+                        <img src="img/logo/ms.png" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/@firmandyt" target="_blank" class="mb-52 my-4 mx-4 w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400
+                         hover:border-lime-300 hover:bg-white">
+                        <img src="img/logo/yt.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+    </section>
+
+
+    <!-- portofolio -->
+    <section id="Projek" class="mx-10 pt-36 pb-16">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <!-- <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4> -->
+                    <h2
+                        class="font-bold text-slate-700 text-2xl mb-4 text-center sm:text-3xl md:text-center lg:text-3xl">
+                        Projek</h2>
+                    <p class="font-medium text-center text-md text-slate-600 md:text-lg lg:text-xl">Beberapa contoh
+                        projek yang pernah saya kerjakan</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white h-[480px] rounded-xl shadow-lime-500 shadow-lg overflow-hidden mb-10">
+                        <img src="img/projek/flutter.PNG" class="w-full h-[200px]">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#"
+                                    class="block mb-3 font-semibold text-xl text-slate-700 hover:text-lime-500 truncate">
+                                    Flutter Mobile
+                                </a>
+                            </h3>
+                            <p class="font-medium text-left text-base text-slate-600 mb-6">
+                                Platform yang digunakan para developer untuk membuat aplikasi multiplatform baik mobile
+                                Android, iOS, web, maupun desktop
+                            </p>
+                            <button
+                                class="bi bi-info-lg font-medium text-sm text-white bg-lime-500 py-2 px-4 rounded-lg hover:opacity-80 show-modal">Selengkapnya</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white h-[480px] rounded-xl shadow-lime-500 shadow-lg overflow-hidden mb-10">
+                        <img src="img/projek/hidroponik.PNG" class="w-full h-[200px]">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#"
+                                    class="block mb-3 font-semibold text-xl text-slate-700 hover:text-lime-500 truncate">
+                                    Hidroponik
+                                </a>
+                            </h3>
+                            <p class="font-medium text-base text-left text-slate-600 mb-6">
+                                Salah satu metode dalam budidaya menanam dengan memanfaatkan air tanpa menggunakan media
+                                tanah
+                            </p>
+                            <button
+                                class="bi bi-info-lg font-medium text-sm text-white bg-lime-500 py-2 px-4 rounded-lg hover:opacity-80 show-modala">Selengkapnya</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white h-[480px] rounded-xl shadow-lg shadow-lime-500 overflow-hidden mb-10">
+                        <img src="img/projek/py.PNG" class="w-full h-[200px]">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#"
+                                    class="block mb-3 font-semibold text-xl text-slate-700 hover:text-lime-500 truncate">
+                                    Python
+                                </a>
+                            </h3>
+                            <p class="font-medium text-base text-left text-slate-600 mb-6">
+                                Bahasa pemrograman komputer yang biasa dipakai untuk membangun situs, aplikasi, dan
+                                melakukan analisis data.
+                            </p>
+                            <button
+                                class="bi bi-info-lg font-medium text-sm text-white bg-lime-500 py-2 px-4 rounded-lg hover:opacity-80 show-modalb">Selengkapnya</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end portofolio -->
+
+
+    <!-- modal flutter -->
+    <div class="bg-gray-200">
+        <!-- <button class="bg-red-600 hover:bg-blue-700 px-3 py-1 rounded text-white m-5 show-modala">show Modal</button> -->
+        <div id=""
+            class="modal pt-16 pb-32 h-screen w-full fixed left-0 top-0  justify-center 
+            sm:my-[-190px] md:pb-56 lg:pb-56 sm:pt-52 sm:px-32 md:px-52 md:w-full md:pt-52 lg:px-96 lg:pt-52 items-center bg-opacity-50 hidden">
+            <div class="bg-white rounded-xl shadow-md mx-8 shadow-lime-500">
+                <div class="border-b px-16 py-2">
+                    <h3 class="text-center py-4 text-slate-700 font-bold">Detail</h3>
+                    <img class="rounded-xl" src="img/projek/demo.PNG" alt="">
+                </div>
+                <div class="p-3 text-slate-700 text-justify">
+                    Awal kemunculan mobile apps di tahun 2000-an, tepatnya sekitar tahun 2009. Aplikasi mobile ini
+                    merupakan pengembangan
+                    dari rancangan aplikasi yang sebelumnya belum terlalu canggih. Berikut link video youtube projek
+                    yang pernah saya kerjakan <a target="_blank"
+                        href="https://www.youtube.com/watch?v=TEDKMcH-OCM&feature=youtu.be"> : <span
+                            class="text-blue-600 hover:text-blue-400">Link Youtube</span></a>
+                </div>
+                <div class="flex justify-end items-center w-100 border-t p-3">
+                    <button
+                        class="bi bi-x bg-lime-600 hover:bg-lime-500 px-3 py-1 rounded text-white mr-1 close-modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    <!-- modal hidro tailwind -->
+    <div class="bg-gray-200">
+        <!-- <button class="bg-red-600 hover:bg-blue-700 px-3 py-1 rounded text-white m-5 show-modala">show Modal</button> -->
+        <div id=""
+            class="modala pt-16 pb-32 h-screen w-full fixed left-0 top-0 justify-center 
+            sm:my-[-190px] md:pb-56 lg:pb-56 sm:pt-52 sm:px-32 md:px-52 md:w-full md:pt-52 lg:px-96 lg:pt-52 items-center bg-opacity-50 hidden">
+            <div class="bg-white rounded-xl shadow-md mx-8 shadow-lime-500">
+                <div class="border-b px-16 py-2">
+                    <h3 class="text-center py-4 text-slate-700 font-bold">Detail</h3>
+                    <img class="rounded-xl" src="img/projek/hidro.PNG" alt="">
+                </div>
+                <div class="p-3 text-slate-700 text-justify">
+                    Kegiatan ini bertujuan untuk membantu murid SMK mengerjakan tugas dari sekolah. Praktikum
+                    tersebut dibebaskan menggunakan media apa saja. Jadi saya menyarankan menggunakan bahan-bahan di
+                    sekitar semisal tisu, botol, baskom sebagai media penunjang. Berikut link video
+                    youtubenya <a target="_blank" href="https://www.youtube.com/watch?v=CS1b4lA2V2I">: <span
+                            class="text-blue-600 hover:text-blue-400">Link Youtube</span></a>
+                </div>
+                <div class="flex justify-end items-center w-100 border-t p-3">
+                    <button
+                        class="bi bi-x bg-lime-600 hover:bg-lime-500 px-3 py-1 rounded text-white mr-1 close-modala">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    <!-- modal py -->
+    <div class="bg-gray-200">
+        <!-- <button class="bg-red-600 hover:bg-blue-700 px-3 py-1 rounded text-white m-5 show-modala">show Modal</button> -->
+        <div id=""
+            class="modalb pt-16 pb-32 h-screen w-full fixed left-0 top-0 justify-center 
+            sm:my-[-190px] md:pb-56 lg:pb-56 sm:pt-52 sm:px-32 md:px-52 md:w-full md:pt-52 lg:px-96 lg:pt-52 items-center bg-opacity-50 hidden">
+            <div class="bg-white rounded-xl shadow-md mx-8 shadow-lime-500">
+                <div class="border-b px-16 py-2">
+                    <h3 class="text-center py-4 text-slate-700 font-bold">Detail</h3>
+                    <img class="rounded-xl" src="img/projek/kalku.PNG" alt="">
+                </div>
+                <div class="p-3 text-slate-700 text-justify">
+                    Bahasa pemrograman tingkat tinggi yang bisa diartikan untuk tujuan umum. Diciptakan oleh Guido Van
+                    Rossum pada tahun
+                    1990 di negeri Belanda sebagai pengganti bahasa pemrograman. Berikut link video youtube projek
+                    yang pernah saya kerjakan <a target="_blank" href="https://www.youtube.com/watch?v=CI6B2kV38Ok"> :
+                        <span class="text-blue-600 hover:text-blue-400">Link Youtube</span></a>
+                </div>
+                <div class="flex justify-end items-center w-100 border-t p-3">
+                    <button
+                        class="bi bi-x bg-lime-600 hover:bg-lime-500 px-3 py-1 rounded text-white mr-1 close-modalb">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    <!-- sertif -->
+    <section id="Sertif" class="pl-4 mt-12 pt-16 pb-32 bg-lime-50">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-12 text-center">
+                    <h2 class="mb-2 text-lg font-semibold text-slate-700 sm:text-3xl lg:text-4xl">
+                        Sertifikat</h2>
+                    <p class="text-md font-medium text-slate-600 md:text-lg">Berikut beberapa sertifikat yang pernah
+                        saya dapatkan</p>
+                </div>
+            </div>
+            <div
+                class=" w-full flex-wrap justify-center px-2 xl:mx-auto xl:w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <div class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
+                    <div class="relative"><a href="">
+                            <img class="w-full h-[250px]" src="img/Sertif/mikro.PNG" alt="sertifikat dicoding">
+                            <div
+                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="px-6 py-4 mb-auto">
+                        <a href=""
+                            class="text-lg hover:text-lime-500 transition text-slate-600 font-semibold duration-500 ease-in-out inline-block mb-2">
+                            MIKROTIK</a>
+                        <p class="text-secondary dark:text-slate-700 md:text-left lg:text-left">
+                            Mikrotik Certified Network Associate
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden shadow-lg bg-slate-100 flex flex-col">
+                    <div class="relative"><a href="">
+                            <img class="w-full h-[250px]" src="img/Sertif/pkj.jpg" alt="sertifikat skilvul">
+                            <div
+                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="px-6 py-4 mb-auto">
+                        <a href=""
+                            class="font-semibold text-lg hover:text-lime-500 transition text-slate-600 duration-500 ease-in-out inline-block mb-2">
+                            INIXINDO
+                        </a>
+                        <p class="text-secondary text-slate-600 md:text-left lg:text-left">
+                            Skema sertifikasi Pengadministrasian Keamanan Jaringan merupakan skema sertifikasi klaster
+                            yang dikembangkan oleh komite
+                            skema sertifikasi LSP P1 LPK INIXINDO
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
+                    <div class="relative"><a href="">
+                            <img class="w-full h-[250px]" src="img/Sertif/tes.PNG" alt="portofolio">
+                            <div
+                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="px-6 py-4 mb-auto">
+                        <a href=""
+                            class="font-semibold text-lg hover:text-lime-500 transition text-slate-600 duration-500 ease-in-out inline-block mb-2">
+                            TESTDOME</a>
+                        <p class="text-base text-secondary text-slate-600 md:text-justify lg:text-justify">
+                            c++
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end sertif -->
+
+
+    <!-- hobby -->
+    <section id="Hobi" class="pl-4 mt-8 pt-16 pb-32 ">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-12 text-center">
+                    <h2 class="mb-2 text-lg font-semibold text-slate-700 sm:text-3xl lg:text-4xl">
+                        Hobi</h2>
+                    <p class="text-md font-medium text-slate-600 dark:text-dark md:text-lg">Kegemaran yang saya sukai
+                    </p>
+                </div>
+            </div>
+            <div
+                class=" w-full flex-wrap justify-center px-2 xl:mx-auto xl:w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <div class="rounded overflow-hidden shadow-lime-500 shadow-lg flex flex-col">
+                    <div class="relative"><a href="">
+                            <img class="w-full h-[250px]" src="img/hobby/sawi.jpg" alt="sertifikat dicoding">
+                        </a>
+                    </div>
+                    <div class="px-6 py-4 mb-auto">
+                        <a href=""
+                            class="font-semibold text-lg hover:text-lime-500 transition text-slate-700 dark:text-slate-600 duration-500 ease-in-out inline-block mb-2">
+                            Hidroponik</a>
+                        <p class="text-secondary dark:text-slate-700 md:text-left lg:text-left">
+                            Berkebun sawi hidroponik di halaman rumah
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden shadow-lime-500 shadow-lg flex flex-col">
+                    <div class="relative"><a href="">
+                            <img class="w-full h-[250px]" src="img/bike.jpg" alt="sertifikat skilvul">
+                        </a>
+                    </div>
+                    <div class="px-6 py-4 mb-auto">
+                        <a href=""
+                            class="font-semibold text-lg hover:text-lime-500 transition text-slate-700 duration-500 ease-in-out inline-block mb-2">
+                            Gowes
+                        </a>
+                        <p class="text-secondary text-slate-600 md:text-left lg:text-left">
+                            Menjelajahi desa menikmati udara segar
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden shadow-lg shadow-lime-500 flex flex-col">
+                    <div class="relative"><a href="">
+                            <img class="w-full h-[250px]" src="img/hobby/selada.jpg" alt="portofolio">
+                        </a>
+                    </div>
+                    <div class="px-6 py-4 mb-auto">
+                        <a href=""
+                            class="font-semibold text-lg hover:text-lime-500 transition text-slate-700 duration-500 ease-in-out inline-block mb-2">
+                            Hidroponik</a>
+                        <p class="text-base text-secondary text-slate-600 md:text-justify lg:text-justify">
+                            Berkebun selada hidroponik di halaman rumah
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- kontak -->
+    <div id="Kontak" class="w-full mt-12">
+        <div class="mx-auto mb-8 max-w-xl text-center">
+            <h2 class="mb-4 text-3xl font-bold text-slate-600 sm:text-4xl lg:text-3xl">Kontak Email</h2>
+            <p class="text-slate-600">Kirimi saya pesan melalui email</p>
+            <p class="text-md flex justify-center font-medium text-slate-600 md:text-lg mb-28">
+                <a href="mailto:firmandyt@gmail.com" class="my-4 mx-4 w-9 h-9 mr-3 mb-10 rounded-full flex justify-center items-center border border-slate-400
+                                         hover:border-lime-300 hover:bg-white">
+                    <img class="" src="img/logo/gm.png" alt="">
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- end kontak -->
+
+    <!-- footer -->
+    <footer class="bg-gradient-to-l from-lime-300 to-lime-600 mt-12 pt-20 pb-8">
+        <div class="container">
+            <ul class="flex justify-center">
+                <a href="#">
+                    <li class="px-1 text-slate-600 hover:text-white duration-700 font-semibold">Beranda</li>
+                </a>
+                <a href="#Tentang Saya">
+                    <li class="px-1 text-slate-600 hover:text-white duration-700 font-semibold">Tentang Saya</li>
+                </a>
+                <a href="#Projek">
+                    <li class="px-1 text-slate-600 hover:text-white duration-700 font-semibold">Projek</li>
+                </a>
+                <a href="#Sertif">
+                    <li class="px-1 text-slate-600 hover:text-white duration-700 font-semibold">Sertif</li>
+                </a>
+                <a href="#Hobi">
+                    <li class="px-1 text-slate-600 hover:text-white duration-700 font-semibold">Hobi</li>
+                </a>
+            </ul>
+            <h1 class="py-5 text-center text-white"><span class="bi bi-c-circle"></span> Copyright 2023 All Rights
+                Reserved by Firman</h1>
+            <p class="flex justify-center">
+                <a href="https://www.facebook.com/firman.hidayatullah/" target="_blank" class="my-4 mx-4 w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400
+                                             hover:border-lime-300 hover:bg-white">
+                    <img src="img/logo/fb.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/firmandyt/" target="_blank" class="my-4 mx-4 w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400
+                                             hover:border-lime-300 hover:bg-white">
+                    <img src="img/logo/ig.png" alt="">
+                </a>
+                <a href="https://www.facebook.com/firman.hidayatullah/" target="_blank" class="my-4 mx-4 w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400
+                                             hover:border-lime-300 hover:bg-white">
+                    <img src="img/logo/ms.png" alt="">
+                </a>
+                <a href="https://www.youtube.com/@firmandyt" target="_blank" class="my-4 mx-4 w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400
+                                             hover:border-lime-300 hover:bg-white">
+                    <img src="img/logo/yt.png" alt="">
+                </a>
+            </p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- navbar -->
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close", list.classList.
+                add('top-[80px]'), list.classList.add('opacity-100')
+            ) : (e.name = "menu", list.classList.remove('top-[80px]'),
+                list.classList.remove('opacity-100'))
+        }
+    </script>
+
+    <!-- modal flutter tailwinds-->
+    <script>
+        const modal = document.querySelector('.modal');
+
+        const showModal = document.querySelector('.show-modal');
+        const closeModal = document.querySelector('.close-modal');
+
+        showModal.addEventListener('click', function () {
+            modal.classList.remove('hidden')
+        });
+
+        closeModal.addEventListener('click', function () {
+            modal.classList.add('hidden')
+        });
+    </script>
+    <!-- end modal -->
+
+    <!-- modal hidro tailwinds-->
+    <script>
+        const modala = document.querySelector('.modala');
+
+        const showModala = document.querySelector('.show-modala');
+        const closeModala = document.querySelector('.close-modala');
+
+        showModala.addEventListener('click', function () {
+            modala.classList.remove('hidden')
+        });
+
+        closeModala.addEventListener('click', function () {
+            modala.classList.add('hidden')
+        });
+    </script>
+    <!-- end modal -->
+
+    <!-- modal py tailwinds-->
+    <script>
+        const modalb = document.querySelector('.modalb');
+
+        const showModalb = document.querySelector('.show-modalb');
+        const closeModalb = document.querySelector('.close-modalb');
+
+        showModalb.addEventListener('click', function () {
+            modalb.classList.remove('hidden')
+        });
+
+        closeModalb.addEventListener('click', function () {
+            modalb.classList.add('hidden')
+        });
+    </script>
+    <!-- end modal -->
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
