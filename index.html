@@ -8,6 +8,8 @@
     <link href="img/logo/f.png" rel="shortcut icon">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- tailwinds -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- fonts -->
@@ -34,7 +36,7 @@
     <nav
         class="fixed top-0 w-full z-50 p-5 bg-gradient-to-r from-[#9DC183] to-[#B1D8B7] shadow-lg md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center">
-            <span class="text-lg text-white font-bold cursor-pointer"> Biodata </span>
+            <span data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" class="text-lg text-white font-bold cursor-pointer"> Biodata </span>
             <span class="lg:hidden md:hidden">
                 <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
             </span>
@@ -43,22 +45,22 @@
             w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 top-[-400px]
             transition-all ease-in-out duration-500">
             <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl text-white hover:text-opacity-50 duration-500">Beranda</a>
+                <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" class="text-xl text-white hover:text-opacity-50 duration-500">Beranda</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="#Tentang Saya" class="text-xl text-white hover:text-opacity-50 duration-500">Tentang</a>
+                <a href="#Tentang Saya" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="text-xl text-white hover:text-opacity-50 duration-500">Tentang</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="#Projek" class="text-xl text-white hover:text-opacity-50 duration-500">Projek</a>
+                <a href="#Projek" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" class="text-xl text-white hover:text-opacity-50 duration-500">Projek</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="#Sertif" class="text-xl text-white hover:text-opacity-50 duration-500">Sertif</a>
+                <a href="#Sertif" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="text-xl text-white hover:text-opacity-50 duration-500">Sertif</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="#Hobi" class="text-xl text-white hover:text-opacity-50 duration-500">Hobi</a>
+                <a href="#Hobi" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" class="text-xl text-white hover:text-opacity-50 duration-500">Hobi</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="#Kontak" class="text-xl text-white hover:text-opacity-50 duration-500">Kontak</a>
+                <a href="#Kontak" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="text-xl text-white hover:text-opacity-50 duration-500">Kontak</a>
             </li>
         </ul>
     </nav>
@@ -69,17 +71,17 @@
         <div class="container flex flex-wrap items-center justify-center
              mx-auto mt-10 md:px-12 md:flex-row">
             <div class="mb-14 lg:mb-0 lg:w-1/2">
-                <h1 class="max-w-xl text-slate-700 font-bold text-center
+                <h1  data-aos="fade-right" data-aos-duration="1000" class="max-w-xl text-slate-700 font-bold text-center
              text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:text-center xl:text-left lg:leading-tight mb-5">Firman
                     Hidayatullah
                 </h1>
-                <p
+                <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300"
                     class="max-w-xl font-medium text-center text-slate-600 lg:text-center lg:pb-6 xl:text-left lg:max-w-md md:text-2xl lg:text-2xl">
                     Hidroponik | Ngoding | Gowes
                 </p>
             </div>
             <div class="">
-                <img class="w-52 sm:w-64 md:w-full lg:w-full rounded-full" src="img/me/me.jpg" alt="">
+                <img data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" class="w-52 sm:w-64 md:w-full lg:w-full rounded-full" src="img/me/me.jpg" alt="">
             </div>
         </div>
     </section>
@@ -90,12 +92,12 @@
         <div class="container flex flex-wrap items-center justify-center
              mx-auto mt-10 mb-[-200px] lg:mb-0 md:px-12 md:flex-row">
             <div class="mb-14 lg:mb-0 lg:w-1/2">
-                <h1 class="max-w-xl text-slate-700 font-bold text-center
+                <h1 data-aos="fade-up" data-aos-duration="1000" class="max-w-xl text-slate-700 font-bold text-center
                          text-2xl sm:text-3xl md:text-4xl sm:text-center sm:mx-4 md:text-center lg:text-3xl 
                          lg:text-left lg:leading-tight mb-5">
                     Tentang
                 </h1>
-                <p
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
                     class="mx-4 pb-6 max-w-xl font-medium text-justify text-slate-600 lg:text-justify lg:max-w-md md:text-2xl lg:text-2xl">
                     Anak pertama dari dua bersaudara, Ayah kelahiran Banyuwangi dan Ibu kelahiran Jember. Saudara saya
                     bernama Muhammad
@@ -103,16 +105,16 @@
                 </p>
             </div>
             <div class="mb-14 lg:mb-0 lg:pt-11 lg:w-1/2">
-                <h1
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
                     class="max-w-xl text-slate-700 font-bold text-center
                    sm:text-center sm:mx-4 text-2xl sm:text-3xl md:text-center md:text-4xl lg:text-3xl lg:text-left lg:leading-tight mb-5">
                     Sosial Media
                 </h1>
-                <p
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
                     class="text-center mx-4 max-w-xl font-medium text-slate-600 lg:text-justify lg:max-w-md md:text-2xl lg:text-2xl">
                     Tak kenal maka tak sayang
                 </p>
-                <div class="flex justify-center sm:justify-start md:justify-center lg:justify-normal">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="flex justify-center sm:justify-start md:justify-center lg:justify-normal">
                     <!-- youtube -->
                     <a href="https://www.facebook.com/firman.hidayatullah?mibextid=vk8aRt" target="_blank" class="my-4 mx-4 w-9 h-9 mr-3 flex justify-center items-center
                         hover:opacity-50">
@@ -146,15 +148,15 @@
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <!-- <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4> -->
-                    <h2
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
                         class="font-bold text-slate-700 text-2xl mb-4 text-center sm:text-3xl md:text-center lg:text-3xl">
                         Projek</h2>
-                    <p class="font-medium text-center text-md text-slate-600 md:text-lg lg:text-xl">Beberapa contoh
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="font-medium text-center text-md text-slate-600 md:text-lg lg:text-xl">Beberapa contoh
                         projek yang pernah saya kerjakan</p>
                 </div>
             </div>
             <div class="flex flex-wrap justify-center">
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white h-[480px] rounded-xl shadow-[#9DC183] shadow-lg overflow-hidden mb-10">
                         <img src="img/projek/flutter.PNG" class="w-full h-[200px]">
                         <div class="py-8 px-6">
@@ -174,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white h-[480px] rounded-xl shadow-[#9DC183] shadow-lg overflow-hidden mb-10">
                         <img src="img/projek/vege.PNG" class="w-full h-[200px]">
                         <div class="py-8 px-6">
@@ -194,7 +196,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white h-[480px] rounded-xl shadow-[#9DC183] shadow-lg overflow-hidden mb-10">
                         <img src="img/projek/hidroponik.PNG" class="w-full h-[200px]">
                         <div class="py-8 px-6">
@@ -214,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white h-[480px] rounded-xl shadow-lg shadow-[#9DC183] overflow-hidden mb-10">
                         <img src="img/projek/py.PNG" class="w-full h-[200px]">
                         <div class="py-8 px-6">
@@ -357,15 +359,15 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto mb-12 text-center">
-                    <h2 class="mb-2 text-lg font-semibold text-slate-700 sm:text-3xl lg:text-4xl">
+                    <h2 data-aos="fade-up" data-aos-duration="1000" class="mb-2 text-lg font-semibold text-slate-700 sm:text-3xl lg:text-4xl">
                         Sertifikat</h2>
-                    <p class="text-md font-medium text-slate-600 md:text-lg">Berikut beberapa sertifikat yang pernah
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="text-md font-medium text-slate-600 md:text-lg">Berikut beberapa sertifikat yang pernah
                         saya dapatkan</p>
                 </div>
             </div>
-            <div
+            <div 
                 class=" w-full flex-wrap justify-center px-2 xl:mx-auto xl:w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-                <div class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
                     <div class="relative"><a>
                             <img class="w-full h-[250px]" src="img/Sertif/alibaba.jpg">
                             <div
@@ -383,7 +385,7 @@
                     </div>
                 </div>
 
-                <div class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
                     <div class="relative"><a>
                             <img class="w-full h-[250px]" src="img/Sertif/python.jpg">
                             <div
@@ -401,7 +403,7 @@
                     </div>
                 </div>
 
-                <div class="rounded overflow-hidden shadow-lg bg-slate-100 flex flex-col">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" class="rounded overflow-hidden shadow-lg bg-slate-100 flex flex-col">
                     <div class="relative"><a>
                             <img class="w-full h-[250px]" src="img/Sertif/pkj.jpg">
                             <div
@@ -420,7 +422,7 @@
                     </div>
                 </div>
 
-                <div class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800" class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
                     <div class="relative"><a>
                             <img class="w-full h-[250px]" src="img/Sertif/mikro.PNG">
                             <div
@@ -438,7 +440,7 @@
                     </div>
                 </div>
 
-                <div class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
                     <div class="relative"><a>
                             <img class="w-full h-[250px]" src="img/Sertif/js.jpg">
                             <div
@@ -456,7 +458,7 @@
                     </div>
                 </div>
 
-                <div class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200" class="rounded overflow-hidden bg-slate-100 shadow-lg flex flex-col">
                     <div class="relative"><a>
                             <img class="w-full h-[250px]" src="img/Sertif/tes.PNG">
                             <div
@@ -485,15 +487,15 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto mb-12 text-center">
-                    <h2 class="mb-2 text-lg font-semibold text-slate-700 sm:text-3xl lg:text-4xl">
+                    <h2 data-aos="fade-up" data-aos-duration="1000" class="mb-2 text-lg font-semibold text-slate-700 sm:text-3xl lg:text-4xl">
                         Hobi</h2>
-                    <p class="text-md font-medium text-slate-600 dark:text-dark md:text-lg">Kegemaran yang saya sukai
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="text-md font-medium text-slate-600 dark:text-dark md:text-lg">Kegemaran yang saya sukai
                     </p>
                 </div>
             </div>
             <div
                 class=" w-full flex-wrap justify-center px-2 xl:mx-auto xl:w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-                <div class="rounded overflow-hidden shadow-[#9DC183] shadow-lg flex flex-col">
+                <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="rounded overflow-hidden shadow-[#9DC183] shadow-lg flex flex-col">
                     <div class="relative"><a>
                             <img class="w-full h-[250px]" src="img/hobby/sawi.jpg">
                         </a>
@@ -508,7 +510,7 @@
                     </div>
                 </div>
 
-                <div class="rounded overflow-hidden shadow-[#9DC183] shadow-lg flex flex-col">
+                <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" class="rounded overflow-hidden shadow-[#9DC183] shadow-lg flex flex-col">
                     <div class="relative"><a>
                             <img class="w-full h-[250px]" src="img/me/bike.jpg">
                         </a>
@@ -524,7 +526,7 @@
                     </div>
                 </div>
 
-                <div class="rounded overflow-hidden shadow-lg shadow-[#9DC183] flex flex-col">
+                <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" class="rounded overflow-hidden shadow-lg shadow-[#9DC183] flex flex-col">
                     <div class="relative"><a>
                             <img class="w-full h-[250px]" src="img/hobby/selada.jpg">
                         </a>
@@ -546,9 +548,9 @@
     <!-- kontak -->
     <div id="Kontak" class="w-full mt-12">
         <div class="mx-auto mb-8 max-w-xl text-center">
-            <h2 class="mb-4 text-3xl font-bold text-slate-600 sm:text-4xl lg:text-3xl">Kontak Email</h2>
-            <p class="text-slate-600">Kirimi saya pesan melalui email</p>
-            <p class="text-md flex justify-center font-medium text-slate-600 md:text-lg mb-28">
+            <h2 data-aos="zoom-in" data-aos-duration="1000" class="mb-4 text-3xl font-bold text-slate-600 sm:text-4xl lg:text-3xl">Kontak Email</h2>
+            <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" class="text-slate-600">Kirimi saya pesan melalui email</p>
+            <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" class="text-md flex justify-center font-medium text-slate-600 md:text-lg mb-28">
                 <a href="mailto:firman.txt@gmail.com"
                     class="my-4 mx-4 w-9 h-9 mr-3 mb-10 rounded-full flex justify-center items-cent hover:opacity-50 border-[3px]">
                     <img class="" src="img/logo/gm.png" alt="">
@@ -693,6 +695,11 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/script.js"></script>
 
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
