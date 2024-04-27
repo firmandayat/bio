@@ -32,6 +32,8 @@
 <body oncontextmenu="return false" onkeydown="return false" onmousedown="return false" id="Beranda"
     class="font-[Poppins]">
 
+    <div style="background: #000 url(img/load/load.gif) no-repeat center center; height: 100vh; width: 100%; position: fixed; z-index: 100;" id="preloader"></div>
+
     <!-- navbar -->
     <nav
         class="fixed top-0 w-full z-50 p-5 bg-gradient-to-r from-[#9DC183] to-[#B1D8B7] shadow-lg md:flex md:items-center md:justify-between">
@@ -689,6 +691,15 @@
         });
     </script>
     <!-- end modal -->
+
+    <!-- loading -->
+    <script>
+        let loader = document.getElementById("preloader")
+        window.addEventListener("load", function () {
+            loader.style.display = "none"
+        })
+    </script>
+    <!-- end -->
 
     <!-- icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
