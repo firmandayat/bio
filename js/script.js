@@ -33,8 +33,38 @@ function Menu(e) {
 // end
 
 // aos
-    AOS.init();
+    // AOS.init();
 // end
+
+// scroll
+const srLeft = ScrollReveal({
+  origin: "left",
+  distance: "80px",
+  duration: 2000,
+  reset: true,
+});
+srLeft.reveal(".scLeft");
+
+const srRight = ScrollReveal({
+  origin: "right",
+  distance: "80px",
+  duration: 2000,
+  reset: true,
+});
+srRight.reveal(".scRight")
+
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  duration: 2000,
+  reset: true,
+});
+sr.reveal(".scroll");
+sr.reveal(".sc1", { delay: 100 });
+sr.reveal(".sc2", { delay: 200 });
+sr.reveal(".sc3", { delay: 300 });
+sr.reveal(".sc4", { delay: 400 });
+
 
 // modal flutter
 const modal = document.querySelector(".modal");
