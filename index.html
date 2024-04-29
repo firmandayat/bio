@@ -740,9 +740,12 @@
     <script>
         gsap.registerPlugin(TextPlugin)
         gsap.to('.text', {
-            duration: 3,
-            repeat: 6,
-            text: "Hidroponik | Ngoding | Gowes",
+            duration: 4,
+            repeat: 100,
+            text: {
+                value: "Hidroponik | Ngoding | Gowes",
+                delay: 3, 
+            },
             ease: "none",
         });
     </script>
