@@ -1,0 +1,97 @@
+// loading
+    let loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+// end
+
+// navbar
+function Menu(e) {
+  let list = document.querySelector("ul");
+
+  e.name === "menu"
+    ? ((e.name = "close"),
+      list.classList.add("top-[80px]"),
+      list.classList.add("opacity-100"))
+    : ((e.name = "menu"),
+      list.classList.remove("top-[80px]"),
+      list.classList.remove("opacity-100"));
+}
+// end
+
+// text plugin
+    gsap.registerPlugin(TextPlugin);
+    gsap.to(".text", {
+      duration: 4,
+      repeat: 4,
+      text: {
+        value: "Hidroponik | Ngoding | Gowes",
+        delay: 3,
+      },
+      ease: "none",
+    });
+// end
+
+// aos
+    AOS.init();
+// end
+
+// modal flutter
+const modal = document.querySelector(".modal");
+
+const showModal = document.querySelector(".show-modal");
+const closeModal = document.querySelector(".close-modal");
+
+showModal.addEventListener("click", function () {
+  modal.classList.remove("hidden");
+});
+
+closeModal.addEventListener("click", function () {
+  modal.classList.add("hidden");
+});
+// end
+
+// modal web
+const modalw = document.querySelector(".modalw");
+
+const showModalw = document.querySelector(".show-modalw");
+const closeModalw = document.querySelector(".close-modalw");
+
+showModalw.addEventListener("click", function () {
+  modalw.classList.remove("hidden");
+});
+
+closeModalw.addEventListener("click", function () {
+  modalw.classList.add("hidden");
+});
+// end
+
+// modal hidro
+const modala = document.querySelector(".modala");
+
+const showModala = document.querySelector(".show-modala");
+const closeModala = document.querySelector(".close-modala");
+
+showModala.addEventListener("click", function () {
+  modala.classList.remove("hidden");
+});
+
+closeModala.addEventListener("click", function () {
+  modala.classList.add("hidden");
+});
+// end
+
+// modal py
+const modalb = document.querySelector(".modalb");
+
+const showModalb = document.querySelector(".show-modalb");
+const closeModalb = document.querySelector(".close-modalb");
+
+showModalb.addEventListener("click", function () {
+  modalb.classList.remove("hidden");
+});
+
+closeModalb.addEventListener("click", function () {
+  modalb.classList.add("hidden");
+});
+// end
