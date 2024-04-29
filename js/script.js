@@ -54,7 +54,7 @@ const srRight = ScrollReveal({
 srRight.reveal(".scRight")
 
 const sr = ScrollReveal({
-  origin: "top",
+  origin: "bottom",
   distance: "80px",
   duration: 2000,
   reset: true,
