@@ -78,8 +78,8 @@
                     Hidayatullah
                 </h1>
                 <p data-aos="fade-right" data-aos-duration="1000" 
-                    class="max-w-xl font-medium text-center text-slate-600 lg:text-center lg:pb-6 xl:text-left lg:max-w-md md:text-2xl lg:text-2xl">
-                    Hidroponik | Ngoding | Gowes
+                    class="text max-w-xl font-medium text-center text-slate-600 lg:text-center lg:pb-6 xl:text-left lg:max-w-md md:text-2xl lg:text-2xl">
+                    |
                 </p>
             </div>
             <div class="">
@@ -705,6 +705,19 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/script.js"></script>
+
+    <!-- text -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script>
+         gsap.registerPlugin(TextPlugin)
+         gsap.to('.text', {
+                duration: 3,
+                repeat:10,
+                text: "Hidroponik | Ngoding | Gowes",
+                ease: "none",
+            });
+    </script>
 
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
