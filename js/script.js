@@ -23,7 +23,7 @@ function Menu(e) {
     gsap.registerPlugin(TextPlugin);
     gsap.to(".text", {
       duration: 4,
-      repeat: 4,
+      repeat: 2,
       text: {
         value: "Hidroponik | Ngoding | Gowes",
         delay: 3,
