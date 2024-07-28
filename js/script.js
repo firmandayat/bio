@@ -65,6 +65,20 @@ sr.reveal(".sc2", { delay: 200 });
 sr.reveal(".sc3", { delay: 300 });
 sr.reveal(".sc4", { delay: 400 });
 
+// modal ai
+const modalAi = document.querySelector(".modalAi");
+
+const showModalAi = document.querySelector(".show-modal-ai");
+const closeModalAi = document.querySelector(".close-modal-ai");
+
+showModalAi.addEventListener("click", function () {
+  modalAi.classList.remove("hidden");
+});
+
+closeModalAi.addEventListener("click", function () {
+  modalAi.classList.add("hidden");
+});
+// end
 
 // modal flutter
 const modal = document.querySelector(".modal");
