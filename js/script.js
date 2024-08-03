@@ -81,6 +81,21 @@ sr.reveal(".sc2", { delay: 200 });
 sr.reveal(".sc3", { delay: 300 });
 sr.reveal(".sc4", { delay: 400 });
 
+// modal cloud
+const modalCloud = document.querySelector(".modalCloud");
+
+const showModalCloud = document.querySelector(".show-modal-cloud");
+const closeModalCloud = document.querySelector(".close-modal-cloud");
+
+showModalCloud.addEventListener("click", function () {
+  modalCloud.classList.remove("hidden");
+});
+
+closeModalCloud.addEventListener("click", function () {
+  modalCloud.classList.add("hidden");
+});
+// end
+
 // modal ai
 const modalAi = document.querySelector(".modalAi");
 
